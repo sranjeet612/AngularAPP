@@ -1,3 +1,18 @@
 <h1>Angular-13 Application</h1>
 <h2>{{title}}</h2>
 <h3>{{message}}</h3>
+<app-login></app-login>
+<app-user-list></app-user-list>
+<app-student-list></app-student-list>
+<app-login></app-login>
+<button (click)="getName('Ranjeet Singh')">click me</button>
+<button (click)="Getmessage('This is Angular-13 Application!!')">Show Message</button>
+<br/><br/>
+<input #txt1 type="text" (keyup)="GetkeyupData(txt1.value)" placeholder="keyup event"/>
+<br/><br/>
+<input type="text" #txt2 (keydown)="GetkeydownData(txt2.value)" placeholder="Keydown event"/>
+<br/><br/>
+<input type="text" #txt3 (blur)="getblurData(txt3.value)" placeholder="Blur Event" />
+<h1 (mouseover)="getmouseoverdata('This is mouse Over Event')">MouseOver Event</h1>
+<br/><br/>
+<h1 (mouseleave)="getmouseleaveData('This is mouse leave event')">mouse Leave event</h1>
