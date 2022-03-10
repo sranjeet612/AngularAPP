@@ -1,0 +1,21 @@
+<p>ifelse works!</p>
+<input type="text" name="Username" [disabled]=show/>
+<span *ngIf="show==='yes'; then ifblock else elseblock"></span>
+
+<ng-template #ifblock>
+    <h2>if condition Executing</h2>
+</ng-template>
+<ng-template #elseblock>
+    <h2>Else Block Executing</h2>
+</ng-template>
+<br/><br/>
+
+<ng-template [ngIf]="color==='red'">
+    <h2 style="color: red;">Red color</h2>
+</ng-template>
+<ng-template [ngIf]="color==='green'">
+    <h2 style="color:green">Green color</h2>
+</ng-template>
+<ng-template [ngIf]="color==='blue'">
+   <h2 style="color:blue">Blue Color</h2>
+</ng-template>

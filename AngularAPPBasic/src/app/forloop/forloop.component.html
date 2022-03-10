@@ -1,0 +1,22 @@
+<p>forloop works!</p>
+<h2 *ngFor="let item of user ">User:{{item}}</h2>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Mobile</th>
+    </tr>
+    <tr *ngFor="let item of userdetails">
+      <td>{{item.Name}}</td>
+      <td>{{item.Email}}</td>
+      <td>{{item.mobile}}</td>
+    </tr>
+</table>
+
+<ul *ngFor="let user of users">
+  <li>{{user.Name}}</li>
+  <li>{{user.Email}}</li>
+  <ul *ngFor="let account of user.social">
+      <li>{{account}}</li>
+  </ul>
+</ul>

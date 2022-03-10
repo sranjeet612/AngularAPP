@@ -1,1 +1,5 @@
-<h1 class="red">user-list works!</h1>
+<h1 class="red">user-list Component!!!</h1>
+<input type="text" #txtuser (keyup)="getdata(txtuser.value)" placeholder="Enter values here" name="Username"/>
+<button (click)="GetTxtData(txtuser.value)">Click ME</button>
+<p>{{Data}}</p>
+<p>{{Message}}</p>

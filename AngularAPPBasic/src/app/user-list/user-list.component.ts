@@ -6,15 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styles: [
     `.red{
       color:red;
-      border: 2px solid green;
     }`
   ]
 })
-export class UserListComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
+export class UserListComponent
+{  
+  Data:string="";
+  Message:string="";
+  getdata(val:string)
+  {
+     this.Data=val;
   }
-
+  GetTxtData(val:string)
+  {
+    this.Message=val;
+  }
 }
