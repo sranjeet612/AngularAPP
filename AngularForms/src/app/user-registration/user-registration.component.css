@@ -1,0 +1,18 @@
+h1{
+    color:blue;
+    background-color: white;
+    text-align: center;
+    font-weight: bold;
+    
+}
+table,form 
+{
+    border: 1px solid green;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    
+}
+table {
+    margin-left: 390px;
+}
