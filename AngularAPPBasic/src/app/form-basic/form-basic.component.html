@@ -1,0 +1,12 @@
+<p>User Registration </p>
+<div>
+    <form #formBasic="ngForm" (ngSubmit)="getData(formBasic)">
+      <input type="text" ngModel name="Username" placeholder="User name"/>
+      <br/>
+      <input type="text" ngModel Name="Email" placeholder="Email" />
+      <br/>
+      <input type="text" ngModel Name="Password" placeholder="Password" />
+      <br/><br/>
+      <button>Register</button>
+    </form>
+</div>
