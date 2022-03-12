@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {FormsModule} from '@angular/forms';
+import {FormsModule,ReactiveFormsModule} from '@angular/forms';
 import { AppComponent } from './app.component';
 import { UserRegistrationComponent } from './user-registration/user-registration.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -17,6 +17,9 @@ import { ChildParentComponent } from './child-parent/child-parent.component';
 import { TwowayBindingComponent } from './twoway-binding/twoway-binding.component';
 import { PipsDemoComponent } from './pips-demo/pips-demo.component';
 import { MypipePipe } from './Pipes/mypipe.pipe';
+import { TemplateFormComponent } from './template-form/template-form.component';
+import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +32,9 @@ import { MypipePipe } from './Pipes/mypipe.pipe';
     ChildParentComponent,
     TwowayBindingComponent,
     PipsDemoComponent,
-    MypipePipe
+    MypipePipe,
+    TemplateFormComponent,
+    ReactiveFormComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +43,8 @@ import { MypipePipe } from './Pipes/mypipe.pipe';
     BrowserAnimationsModule,
     MatButtonModule,
     MatBadgeModule,
-    MatInputModule
+    MatInputModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

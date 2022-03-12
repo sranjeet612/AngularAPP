@@ -1,0 +1,10 @@
+<h1>Tempate Driven AngularForm!!</h1>
+<form #tempform="ngForm" (ngSubmit)="SaveData(tempform.value)">
+    <input type="text" ngModel name="User">
+    <br/><br/>
+    <input type="text" ngModel name="Email">
+    <br/><br/>
+    <input type="text" ngModel name="Password">
+    <br/><br/>
+    <button>Register</button>
+</form>

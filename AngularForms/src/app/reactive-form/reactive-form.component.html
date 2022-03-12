@@ -1,0 +1,22 @@
+<h1>Reactive Form</h1>
+<form [formGroup]="reactForm" (ngSubmit)="Login()">
+   <span>Name:</span>
+   <input type="text" name="UserName" formControlName="Name">
+   <h6 *ngIf="UserName && UserName.invalid && UserName.touched">Please Enter Values.</h6>
+   <br/><br/>
+   <span>Email:</span>
+   <input type="text" name="Email" formControlName="Email">
+   <h6 *ngIf="Email && Email.invalid && Email.touched">Please Enter Valid Email Address</h6>
+   <br/><br/>
+   <span>Pwd:</span>
+   <input type="text" name="Password" formControlName="Password">
+   <h6 *ngIf="Password && Password.invalid && Password.touched">Please Enter Valid Password</h6>
+   <br/><br/>
+   <button [disabled]="reactForm.invalid">Submit</button>
+</form>
+ <span>User Details:</span>
+ <ul>
+  <li>{{Data.Name}}</li>
+  <li>{{Data.Email}}</li>
+  <li>{{Data.Password}}</li>
+</ul>
