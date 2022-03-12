@@ -19,6 +19,7 @@ import { PipsDemoComponent } from './pips-demo/pips-demo.component';
 import { MypipePipe } from './Pipes/mypipe.pipe';
 import { TemplateFormComponent } from './template-form/template-form.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
+import { RedELDirective } from './Directive/red-el.directive';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
     PipsDemoComponent,
     MypipePipe,
     TemplateFormComponent,
-    ReactiveFormComponent
+    ReactiveFormComponent,
+    RedELDirective
   ],
   imports: [
     BrowserModule,
