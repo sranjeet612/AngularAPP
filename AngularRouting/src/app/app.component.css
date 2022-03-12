@@ -1,0 +1,11 @@
+nav{
+    color: white;
+    background-color: darkblue;
+    margin: 10px;
+}
+ul li{ 
+    list-style-type: none; 
+    display: inline;
+    padding: 10px;
+    float: right;
+}
