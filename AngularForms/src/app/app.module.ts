@@ -10,12 +10,14 @@ import { TestMaterialUiComponent } from './test-material-ui/test-material-ui.com
 import {MatButtonModule} from '@angular/material/button';
 import {MatBadgeModule} from '@angular/material/badge';
 import {MatInputModule} from '@angular/material/input';
+import { TodoListComponent } from './todo-list/todo-list.component';
 @NgModule({
   declarations: [
     AppComponent,
     UserRegistrationComponent,
     TestBootstrapComponent,
-    TestMaterialUiComponent
+    TestMaterialUiComponent,
+    TodoListComponent
   ],
   imports: [
     BrowserModule,

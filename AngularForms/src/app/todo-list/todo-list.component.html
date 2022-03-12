@@ -1,0 +1,9 @@
+<h1>Todo List</h1>
+<input type="text" placeholder="Item" #txtlist />
+<br/><br/>
+<button (click)="AddList(txtlist.value)">Add Item</button>
+<br/><br/>
+<h1>Todo list Item!!!</h1>
+<ul *ngFor="let item of list">
+     <li><span>{{item.Id}}:</span>{{item.Name}} <button (click)="RemoveItem(item.Id)">X</button></li>
+</ul>
