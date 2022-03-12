@@ -14,6 +14,9 @@ import { TodoListComponent } from './todo-list/todo-list.component';
 import { ChildComponent } from './child/child.component';
 import { UserChildComponent } from './user-child/user-child.component';
 import { ChildParentComponent } from './child-parent/child-parent.component';
+import { TwowayBindingComponent } from './twoway-binding/twoway-binding.component';
+import { PipsDemoComponent } from './pips-demo/pips-demo.component';
+import { MypipePipe } from './Pipes/mypipe.pipe';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +26,10 @@ import { ChildParentComponent } from './child-parent/child-parent.component';
     TodoListComponent,
     ChildComponent,
     UserChildComponent,
-    ChildParentComponent
+    ChildParentComponent,
+    TwowayBindingComponent,
+    PipsDemoComponent,
+    MypipePipe
   ],
   imports: [
     BrowserModule,
