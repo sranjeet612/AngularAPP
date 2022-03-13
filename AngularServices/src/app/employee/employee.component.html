@@ -1,0 +1,14 @@
+<h2>Employee Details</h2>
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Salary</th>
+    </tr>
+    <tr *ngFor="let emp of Employee">
+         <td>{{emp.Name}}</td>
+         <td>{{emp.Email}}</td>
+         <td>{{emp.Salary}}</td>
+    </tr>
+</table>
