@@ -1,0 +1,11 @@
+<h1>User Registration</h1>
+ 
+<form #userForm="ngForm" (ngSubmit)="saveUser(userForm.value)">
+   <input type="text" ngModel name="Name" placeholder="Enter User Name" />
+   <br><br>
+   <input type="text" ngModel name="Email" placeholder="Enter Email Address"/>
+   <br><br>
+   <input type="text" ngModel name="Password" placeholder="Enter Password here"/>
+   <br><br>
+   <button>Register</button>
+</form>
