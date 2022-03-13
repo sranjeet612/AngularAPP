@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-user-register',
@@ -6,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./user-register.component.css']
 })
 export class UserRegisterComponent implements OnInit {
-
-  constructor() { }
+   
+  routeValue:any;
+  constructor(private route:ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.routeValue=this.route.snapshot.paramMap.get('id');
   }
 
 }
